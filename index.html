@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindsEye - Number Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styleresponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="/img/number1.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section id="homeSection">
+            <img src="/img/number1-transparent.png" alt="MindsEye" id="logo">
+            <p id="instruction">Can you uncover the secret number?</p>
+            <div id="givenHint">Hint:<p id="actualHint">Hint Will be Shown Here!</p></div>
+            <div id="actualGame">
+                <div id="container">
+                    <div id="inputHolder">
+                        <input type="number" id="guessInputs" placeholder="Enter Your Guess (0-9)">
+                        <button id="guessButton" onclick="getGuess()">Guess</button>
+                    </div>
+                    <div id="resultSection">
+                        <p id="result">Result Will Be Shown Here!</p>
+                        <div id="lives"><p id="hearts"></p>
+                            <button id="tryAgain">Try Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="scoreSection">
+            <button id="scoreHolder">Best Score:</button>
+            <button id="hintHolder">Get Hint:</button>
+        </div>
+    </main>
+    <audio src="/assets/win.wav" preload="auto" id="winSound"></audio>
+    <audio src="/assets/lose.wav" preload="auto" id="loseSound"></audio>
+    <audio src="/assets/hint.wav" preload="auto" id="hintSound"></audio>
+    <audio src="/assets/click.wav" preload="auto" id="clickSound"></audio>
+    <audio src="/assets/wrong.mp3" preload="auto" id="wrongSound"></audio>
+    <script src="/script.js"></script>
+</body>
+</html>
